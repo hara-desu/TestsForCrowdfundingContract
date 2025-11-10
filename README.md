@@ -1,66 +1,17 @@
-## Foundry
+# 🧱 LowkickStarter – Foundry Implementation (from Solidity Tutorial)
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This repository contains a complete **Foundry** setup (contracts, deploy scripts, and tests) for the *LowkickStarter* project demonstrated in the YouTube tutorial:  
+📺 [Build a Kickstarter-style Smart Contract in Solidity](https://www.youtube.com/watch?v=ekZbK42Ukvs)
 
-Foundry consists of:
+---
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 🚀 Overview
 
-## Documentation
+The project implements a simplified crowdfunding platform on Ethereum, featuring:
 
-https://book.getfoundry.sh/
+- A **LowkickStarter** factory contract to start new campaigns.
+- Individual **Campaign** contracts that track pledges, goals, and claims.
+- Full test coverage with Foundry.
+- Deployment scripts for local and live networks.
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+---
